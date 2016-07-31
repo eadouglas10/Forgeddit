@@ -1,0 +1,7 @@
+<main>
+  <h1>Forgeddit</h1>
+  <% @links.each do |link| %>
+  <p><%= link_to link.url, "http://#{link.url}" %></p>
+  <% end %>
+  <h3><%= link_to "Submit a new link", new_link_path %> </h3>
+</main>
