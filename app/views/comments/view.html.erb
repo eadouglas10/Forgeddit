@@ -1,4 +1,6 @@
 <main>
+<h2>Comments for <%= @link.url %></h2>
+
   <%= form_for @comment, url: "/links/#{@link.id}/comments" do |f| %>
     <%= f.text_field :body %>
     <%= f.submit "Comment" %>
