@@ -1,0 +1,14 @@
+<main>
+  <%= form_for @comment, url: "/links/#{@link.id}/comments" do |f| %>
+    <%= f.text_field :body %>
+    <%= f.submit "Comment" %>
+  <% end %>
+
+  <% @comments.each do |comment| %>
+  <p>
+    <%= comment.body %>
+  </p>
+<% end %>
+
+<%= link_to "Forgeddit homepage", links_path %>
+</main>
