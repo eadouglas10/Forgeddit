@@ -56,3 +56,4 @@ group :production do
 end
 
 ruby "2.3.1"
+gem 'puma'
