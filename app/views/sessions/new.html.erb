@@ -1,0 +1,11 @@
+<h1>Login to Forgeddit</h1>
+
+<%= form_for @user, url: "/login" do |f| %>
+  <%= f.label :full_name %>
+  <%= f.text_field :full_name %>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <%= f.submit "Login" %>
+<% end %>
+
+<%= link_to "New user?", new_user_path %>

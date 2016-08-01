@@ -9,6 +9,8 @@
 <body>
 
 <%= yield %>
-
+<% if session[:user_id] %>
+<h4>You are currently logged in as <%= current_user.full_name %></h4>
+<% end %>
 </body>
 </html>

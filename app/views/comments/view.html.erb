@@ -6,7 +6,7 @@
 
   <% @comments.each do |comment| %>
   <p>
-    <%= comment.body %>
+    <%= "#{current_user.full_name} said #{comment.body}" %>
   </p>
 <% end %>
 

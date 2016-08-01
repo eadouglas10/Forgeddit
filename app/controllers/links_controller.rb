@@ -1,5 +1,5 @@
 class LinksController < ApplicationController
-
+  before_action :check_for_authorized_user
   def index
     @links = Link.all
   end
